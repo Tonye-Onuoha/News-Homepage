@@ -1,5 +1,5 @@
-const menuIcon = document.querySelector("img[alt='menu-open icon']");
-const closeIcon = document.querySelector("img[alt='menu-close icon']");
+const menuOpenIcon = document.querySelector("img[alt='menu-open icon']");
+const menuCloseIcon = document.querySelector("img[alt='menu-close icon']");
 const mobileMenu = document.querySelector(".mobile-menu");
 const bodyElement = document.querySelector("body");
 
@@ -17,6 +17,6 @@ const closeMenu = () => {
 
 /* Event Listeners */
 
-menuIcon.addEventListener("click", openMenu);
+menuOpenIcon.addEventListener("click", openMenu);
 
-closeIcon.addEventListener("click", closeMenu);
+menuCloseIcon.addEventListener("click", closeMenu);
