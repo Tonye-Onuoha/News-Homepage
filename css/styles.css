@@ -124,7 +124,7 @@ button {
     color: hsl(35, 77%, 62%);
 }
 
-.new-subtitle {
+.new-content-subtitle {
     color: hsl(36, 100%, 99%);
 }
 
@@ -268,5 +268,23 @@ ul {
         grid-template-areas: "main-content main-content new-content" "main-content main-content new-content" "retro-pcs top-laptops gaming-growth";
         grid-column-gap: 30px;
         grid-row-gap: 60px;
+    }
+    /* HOVER STATE */
+    .desktop-header li:hover {
+        cursor: pointer;
+        color: hsl(5, 85%, 63%);
+    }
+    button:hover {
+        cursor: pointer;
+        color: hsl(36, 100%, 99%);
+        background-color: hsl(240, 100%, 5%);
+    }
+    .new-content-subtitle:hover {
+        cursor: pointer;
+        color: hsl(35, 77%, 62%);
+    }
+    .other-subtitle:hover {
+        cursor: pointer;
+        color: hsl(5, 85%, 63%);
     }
 }
