@@ -173,7 +173,7 @@ img[alt="gaming growth"] {
     padding-top: 20px;
     padding-right: 20px;
     box-sizing: border-box;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 100px;
     position: absolute;
