@@ -36,9 +36,6 @@ header {
 }
 
 h1,
-h2,
-h3,
-h4,
 p {
     margin: 0;
 }
@@ -51,10 +48,6 @@ p {
 
 h2 {
     color: hsl(5, 85%, 63%);
-}
-
-h4 {
-    color: hsl(240, 100%, 5%);
 }
 
 .mobile-header {
@@ -98,6 +91,7 @@ h4 {
 }
 
 .main-content-title {
+    font-size: 30px;
     font-weight: 800;
     color: hsl(240, 100%, 5%);
 }
@@ -126,6 +120,8 @@ button {
 
 .new-content-subtitle {
     color: hsl(36, 100%, 99%);
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .new-content {
@@ -163,8 +159,14 @@ img[alt="gaming growth"] {
     justify-content: space-between;
 }
 
-.other-heading {
+.other-content-heading {
     color: hsl(5, 85%, 63%);
+}
+
+.other-content-subtitle {
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    font-size: 18px;
 }
 
 .mobile-menu {
@@ -283,7 +285,7 @@ ul {
         cursor: pointer;
         color: hsl(35, 77%, 62%);
     }
-    .other-subtitle:hover {
+    .other-content-subtitle:hover {
         cursor: pointer;
         color: hsl(5, 85%, 63%);
     }
