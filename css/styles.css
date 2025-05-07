@@ -16,13 +16,14 @@ html {
 }
 
 body {
+    position: relative;
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     box-sizing: border-box;
+    font-size: 15px;
     font-weight: 400;
     background-color: hsl(36, 100%, 99%);
-    position: relative;
 }
 
 header,
@@ -62,11 +63,15 @@ h4 {
     align-items: flex-end;
 }
 
+.desktop-header {
+    display: none;
+}
+
 .content-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
     grid-row-gap: 40px;
 }
 
@@ -93,7 +98,7 @@ h4 {
 }
 
 .main-content-title {
-    font-weight: 700;
+    font-weight: 800;
     color: hsl(240, 100%, 5%);
 }
 
@@ -111,7 +116,7 @@ button {
 .new-content-container {
     width: 100%;
     background-color: hsl(240, 100%, 5%);
-    padding: 25px 15px;
+    padding: 25px 20px;
     box-sizing: border-box;
 }
 
@@ -136,20 +141,13 @@ button {
     border-bottom: none;
 }
 
-.other-content-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
 .other-content {
     display: flex;
     gap: 25px;
 }
 
 .other-content-image-container {
-    height: 134px;
+    height: 124px;
 }
 
 img[alt="retro pcs"],
@@ -189,11 +187,86 @@ img[alt="gaming growth"] {
     justify-content: flex-end;
 }
 
-.mobile-navigation ul {
+ul {
     margin: 0;
     padding-left: 25px;
+    list-style: none;
 }
 
 .mobile-navigation li {
     margin-bottom: 40px;
+}
+
+/* DESKTOP LAYOUT */
+
+@media screen and (min-width: 1150px) {
+    header {
+        margin: 0 auto 50px auto;
+        max-width: 1110px;
+    }
+    .mobile-header {
+        display: none;
+    }
+    .desktop-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 42px;
+        padding-left: 0;
+    }
+    .desktop-header li {
+        color: hsl(236, 13%, 42%);
+    }
+    .main-content {
+        grid-area: main-content;
+        gap: 20px;
+    }
+    .web3-image-image-container {
+        height: 300px;
+        background-image: url("../assets/images/image-web-3-desktop.jpg");
+    }
+    .main-content-title-container {
+        width: 47%;
+    }
+    .main-content-description {
+        width: 53%;
+    }
+    .main-content-title {
+        font-size: 56px;
+        line-height: 1;
+    }
+    .main-content-details {
+        flex-direction: row;
+        gap: 70px;
+    }
+    .main-content-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .new-content-container {
+        grid-area: new-content;
+    }
+    .retro-pcs {
+        grid-area: retro-pcs;
+    }
+    .top-laptops {
+        grid-area: top-laptops;
+    }
+    .gaming-growth {
+        grid-area: gaming-growth;
+    }
+    .content-container {
+        max-width: 1110px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "main-content main-content new-content" "main-content main-content new-content" "retro-pcs top-laptops gaming-growth";
+        grid-column-gap: 30px;
+        grid-row-gap: 60px;
+    }
 }
