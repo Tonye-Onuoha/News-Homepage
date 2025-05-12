@@ -202,6 +202,10 @@ ul {
 /* DESKTOP LAYOUT */
 
 @media screen and (min-width: 1150px) {
+    body {
+        margin: 75px 0;
+        padding-top: 0;
+    }
     header {
         margin: 0 auto 50px auto;
         max-width: 1110px;
